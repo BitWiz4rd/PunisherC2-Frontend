@@ -1,37 +1,69 @@
-# frontend
+# PunisherC2 Frontend
 
-This template should help get you started developing with Vue 3 in Vite.
+A modern frontend for the PunisherC2 project, built with Vite and featuring a robust development setup.
 
-## Recommended IDE Setup
+## 📋 Prerequisites
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
+- Node.js (Latest LTS version recommended)
+- pnpm (Package manager)
 
-## Customize configuration
+## 🛠️ Installation
 
-See [Vite Configuration Reference](https://vite.dev/config/).
+Clone the repository:
+```bash
+git clone https://github.com/BitWiz4rd/PunisherC2-Frontend.git
+```
 
-## Project Setup
-
-```sh
+Install dependencies:
+```bash
 pnpm install
 ```
 
-### Compile and Hot-Reload for Development
+## 🚀 Development
 
-```sh
+To start the development server:
+
+```bash
 pnpm dev
 ```
 
-### Compile and Minify for Production
+The application will be available at `http://localhost:5173` by default.
 
-```sh
+## 📦 Building for Production
+
+To create a production build:
+
+```bash
 pnpm build
 ```
 
-### Lint with [ESLint](https://eslint.org/)
+To preview the production build:
 
-```sh
+```bash
+pnpm preview
+```
+
+## 🧹 Code Quality
+
+The project includes several tools to maintain code quality:
+
+Lint the code:
+```bash
 pnpm lint
 ```
-# PunisherC2-Frontend
-# PunisherC2-Frontend
+
+Format the code:
+```bash
+pnpm format
+```
+
+## 🔧 Configuration Files
+
+- `vite.config.js` - Vite configuration
+- `.eslintrc.js` - ESLint configuration
+- `.prettierrc.json` - Prettier configuration
+- `jsconfig.json` - JavaScript configuration
+
+## 📝 License
+
+MIT
