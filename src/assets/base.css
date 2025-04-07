@@ -1,0 +1,161 @@
+@font-face {
+  font-family: DroidSansMNerdFontRegular;
+  src: url('~@/assets/fonts/DroidSansMNerdFont-Regular.otf');
+}
+@font-face {
+  font-family: DroidSansMNerdFontMonoRegular;
+  src: url('~@/assets/fonts/DroidSansMNerdFontMono-Regular.otf');
+}
+@font-face {
+  font-family: DroidSansMNerdFontPropoRegular;
+  src: url('~@/assets/fonts/DroidSansMNerdFontPropo-Regular.otf');
+}
+/* color palette from <https://github.com/vuejs/theme> */
+:root {
+  --vt-c-white: #141d2b;
+  --vt-c-white-soft: #141d2b;
+  --vt-c-white-mute: #141d2b;
+
+  --vt-c-black: #f8f8f8;
+  --vt-c-black-soft: #f2f2f2f2;
+  --vt-c-black-mute: #f7f7f7;
+
+  --vt-c-indigo: #2c3e50;
+
+  --vt-c-divider-light-1: rgba(60, 60, 60, 0.29);
+  --vt-c-divider-light-2: rgba(60, 60, 60, 0.12);
+  --vt-c-divider-dark-1: rgba(84, 84, 84, 0.65);
+  --vt-c-divider-dark-2: rgba(84, 84, 84, 0.48);
+
+  --vt-c-text-light-1: var(--vt-c-indigo);
+  --vt-c-text-light-2: rgba(60, 60, 60, 0.66);
+  --vt-c-text-dark-1: var(--vt-c-white);
+  --vt-c-text-dark-2: rgba(235, 235, 235, 0.64);
+}
+
+/* semantic color variables for this project */
+:root {
+  --color-background: #141d2b;
+  --color-text: #a4b1cd;
+  --section-gap: 160px;
+  --color-border: #202837;
+  --color-h1-title: #daddea;
+}
+
+
+
+/* @media (prefers-color-scheme: dark) {
+  :root {
+    --color-background: var(--vt-c-black);
+    --color-background-soft: var(--vt-c-black-soft);
+    --color-background-mute: var(--vt-c-black-mute);
+    --color-border: var(--vt-c-divider-dark-2);
+    --color-border-hover: var(--vt-c-divider-dark-1);
+    --color-heading: var(--vt-c-text-dark-1);
+    --color-text: var(--vt-c-text-dark-2);
+  }
+} */
+
+a {
+  cursor: pointer;
+}
+a, a:visited, a:hover, a:active {
+  color: inherit;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  font-weight: normal;
+  /* font-family: DroidSansMNerdFontRegular; */
+}
+
+body {
+  min-height: 100vh;
+  color: var(--color-text);
+  background: var(--color-background);
+  transition: color 0.5s, background-color 0.5s;
+  line-height: 1.6;
+  font-family:
+    Inter,
+    -apple-system,
+    BlinkMacSystemFont,
+    'Segoe UI',
+    Roboto,
+    Oxygen,
+    Ubuntu,
+    Cantarell,
+    'Fira Sans',
+    'Droid Sans',
+    'Helvetica Neue',
+    sans-serif;
+  font-size: 15px;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+header {
+  border-bottom: 1px solid #202837 !important;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--super-bold);
+  max-height: 90px;
+}
+.header-blur {
+  top: 6rem;
+}
+.blur {
+  background-size: 150%;
+  background-position: 50% center;
+  position: absolute;
+  width: 100%;
+  height: 80px;
+  -webkit-filter: blur(40px);
+  filter: blur(40px);
+  opacity: 0.2;
+  background-image: url("/public/img/bg2.jpg");
+  animation: panBackground 5s linear infinite alternate;
+  -webkit-animation: panBackground 15s linear infinite alternate;
+}
+
+
+a {
+  text-decoration: none;
+}
+
+h1 {
+  color: var(--color-h1-title);
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+
+h2 {
+  color: var(--grey-1);
+  margin-bottom: 1rem;
+}
+
+h3 {
+  font-size: 1.25rem;
+  /* 20 px */
+  color: #daddea;
+}
+
+h4 {
+  font-size: 1.125rem;
+  /* 18 px*/
+  padding-bottom: 0.5rem;
+}
+
+h5 {
+  font-size: 0.9rem;
+}
+
+section {
+  max-width: 1200px;
+  margin: 0 auto;
+}
